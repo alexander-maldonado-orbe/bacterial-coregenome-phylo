@@ -1,0 +1,22 @@
+name: bact_phylo
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - mamba
+  - panaroo>=1.3.0
+  - iqtree>=2.2.0
+  - mafft
+  - clipkit
+  - snp-sites
+  - bakta
+  - parallel
+  - pandas
+  - biopython
+  - r-base>=4.0
+  - r-ape
+  - r-ggtree
+  - r-ggplot2
+  - newick-utils
