@@ -22,21 +22,25 @@ This pipeline takes assembled bacterial genomes (in `.fasta` format) and produce
 - **Minimum 8GB of RAM** (16GB recommended for >50 genomes)
 - **Conda/Mamba** installed
 
-## 🚀 Installation (5 minutes)
+## Run the Pipeline
+
+### Option 1: Google Colab (Recommended - No installation required)
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alexander-maldonado-orbe/bacterial-coregenome-phylo/blob/main/pipeline.ipynb)
+
+1. Click the button above
+2. Go to `Runtime Environment` → `Run all`
+3. Upload your genomes
+4. Download the results
+
+### Option 2: Local Installation (Linux or HPC)
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/alexander-maldonado-orbe/bacterial-coregenome-phylo.git
 cd bacterial-coregenome-phylo
-
-# 2. Create the atmosphere with Conda
 conda env create -f environment.yml
-
-# 3. Activate the environment
 conda activate bact_phylo
-
-# 4. Verify installation
-python bin/run_annotation.py --help
+bash workflows/run_full_pipeline.sh
 ```
 
 ## Input Data Structure
