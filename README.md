@@ -7,33 +7,33 @@ Reproducible pipeline for core-genome-based bacterial phylogenomics. Designed fo
 [![Conda](https://img.shields.io/badge/conda-24.1.2-green)](https://docs.conda.io/)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-blue)]()
 
-Pipeline reproducible y automatizado para construir árboles filogenéticos de alta calidad a partir del **core-genoma** de bacterias.
+Reproducible and automated pipeline for building high-quality phylogenetic trees from the **core-genome** of bacteria.
 
-## 🎯 ¿Para qué sirve?
+## 🎯 What is it for?
 
-Este pipeline toma genomas bacterianos ensamblados (en formato `.fasta`) y produce:
-- Un árbol filogenético de máxima verosimilitud basado en el core-genome
-- Visualizaciones del árbol en PDF
-- Archivos intermedios para análisis posteriores
+This pipeline takes assembled bacterial genomes (in `.fasta` format) and produces:
+- A maximum likelihood phylogenetic tree based on the core genome
+- PDF visualizations of the tree
+- Intermediate files for further analysis
+  
+## 📦 Requirements
 
-## 📦 Requisitos
+- **macOS** (Apple Silicon M1/M2/M3 or Intel) or **Linux** (Ubuntu 20.04+)
+- **Minimum 8GB of RAM** (16GB recommended for >50 genomes)
+- **Conda/Mamba** installed
 
-- **macOS** (Apple Silicon M1/M2/M3 o Intel) o **Linux** (Ubuntu 20.04+)
-- **Mínimo 8GB de RAM** (recomendado 16GB para >50 genomas)
-- **Conda/Mamba** instalado
-
-## 🚀 Instalación (5 minutos)
+## 🚀 Installation (5 minutes)
 
 ```bash
-# 1. Clonar el repositorio
+# 1. Clone the repository
 git clone https://github.com/TU-USUARIO/bacterial-coregenome-phylo.git
 cd bacterial-coregenome-phylo
 
-# 2. Crear el ambiente con Conda
+# 2. Create the atmosphere with Conda
 conda env create -f environment.yml
 
-# 3. Activar el ambiente
+# 3. Activate the environment
 conda activate bact_phylo
 
-# 4. Verificar instalación
+# 4. Verify installation
 python bin/run_annotation.py --help
