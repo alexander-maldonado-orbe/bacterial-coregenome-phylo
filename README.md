@@ -26,7 +26,7 @@ This pipeline takes assembled bacterial genomes (in `.fasta` format) and produce
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/TU-USUARIO/bacterial-coregenome-phylo.git
+git clone https://github.com/alexander-maldonado-orbe/bacterial-coregenome-phylo.git
 cd bacterial-coregenome-phylo
 
 # 2. Create the atmosphere with Conda
@@ -72,10 +72,25 @@ bash workflows/run_full_pipeline.sh
 bash test/run_test.sh
 ```
 
-
 ## Citations
-If you use this pipeline, please cite the essential tools:
+### If you use this pipeline, please cite the essential tools:
 
-- Panaroo: Tonkin-Hill et al. (2020) Genome Biology 10.1186/s13059-020-02090-4
-- IQ-TREE: Minh et al. (2020) Mol Biol Evol 10.1093/molbev/msaa015
+- **Panaroo**: Tonkin-Hill, G., et al. (2020). Producing polished prokaryotic pangenomes with the Panaroo pipeline. *Genome Biology*, 21(1), 180. [10.1186/s13059-020-02090-4](https://doi.org/10.1186/s13059-020-02090-4)
 
+- **IQ-TREE 2**: Minh, B. Q., et al. (2020). IQ-TREE 2: New models and efficient methods for phylogenetic inference in the genomic era. *Molecular Biology and Evolution*, 37(5), 1530-1534. [10.1093/molbev/msaa015](https://doi.org/10.1093/molbev/msaa015)
+
+- **Bakta**: Schwengers, O., et al. (2021). Bakta: rapid and standardized annotation of bacterial genomes via alignment-free sequence identification. *Microbial Genomics*, 7(11). [10.1099/mgen.0.000685](https://doi.org/10.1099/mgen.0.000685)
+
+- **ClipKIT**: Steenwyk, J. L., et al. (2020). ClipKIT: A multiple sequence alignment trimming software for phylogenomics. *PLoS Biology*, 18(8), e3001007. [10.1371/journal.pbio.3001007](https://doi.org/10.1371/journal.pbio.3001007)
+
+### If you use this pipeline for a specific study, please also cite:
+```bibtext
+@misc{Maldonado2026,
+  author = {Maldonado, A},
+  title = {bacterial-coregenome-phylo: A pipeline for bacterial core-genome phylogenomics},
+  year = {2026},
+  publisher = {GitHub},
+  url = {https://github.com/alexander-maldonado-orbe/bacterial-coregenome-phylo},
+  version = {1.0.0}
+}
+```
