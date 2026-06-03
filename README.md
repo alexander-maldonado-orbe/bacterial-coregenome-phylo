@@ -52,8 +52,8 @@ output_dir/
 ```
 
 ## Example
-# Run with 8 threads using IQ-TREE
 ```bash
+# Run with 8 threads using IQ-TREE
 bash pipeline.sh -i my_genomes/ -o my_results/ -t 8 -m iqtree
 ```
 
@@ -67,6 +67,64 @@ cd bacterial_phylogeny_pipeline
 conda env create -f environment.yml
 conda activate bact_phylogeny
 ```
+## Make pipeline executable
+```bash
+chmod +x pipeline.sh
+chmod +x scripts/*.py
+```
+
+
+
+## For Linux (x86_64)
+### 1. Install Miniconda
+```bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+bash miniconda.sh -b -p $HOME/miniconda
+source $HOME/miniconda/bin/activate
+conda init
+```
+
+### 2. Clone repository and install environment
+```bash
+git clone https://github.com/alexander-maldonado-orbe/bacterial_phylogeny_pipeline.git
+cd bacterial_phylogeny_pipeline
+
+# Create conda environment (may take 10-15 minutes)
+conda env create -f environment.yml
+conda activate bact_phylogeny
+```
+### 3. Make pipeline executable
+```bash
+chmod +x pipeline.sh
+chmod +x scripts/*.py
+```
+
+## For Linux (ARM64 - e.g., AWS Graviton, Raspberry Pi)
+### 1. Install Miniconda
+```bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O miniconda.sh
+bash miniconda.sh -b -p $HOME/miniconda
+source $HOME/miniconda/bin/activate
+conda init
+```
+
+### 2. Clone repository and install environment
+```bash
+git clone https://github.com/alexander-maldonado-orbe/bacterial_phylogeny_pipeline.git
+cd bacterial_phylogeny_pipeline
+
+# Create conda environment (may take 10-15 minutes)
+conda env create -f environment.yml
+conda activate bact_phylogeny
+```
+### 3. Make pipeline executable
+```bash
+chmod +x pipeline.sh
+chmod +x scripts/*.py
+```
+
+
+
 
 # Run the pipeline
 ```bash
