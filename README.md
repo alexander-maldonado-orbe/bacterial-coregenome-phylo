@@ -34,12 +34,12 @@ Options:
 
 ## Output
 ### Pipeline Steps
-1. Quality check - Verify input files
-2. Annotation - Prokka annotation of all genomes
-3. Core genome - Roary pangenome analysis
-4. Alignment - MAFFT alignment of core genes
-5. Tree building - Maximum likelihood phylogeny
-6. Visualization - Basic tree plots (optional)
+1. **Quality check:** Verify input files
+2. **Annotation:** Prokka annotation of all genomes
+3. **Core genome:** Roary pangenome analysis
+4. **Alignment:** MAFFT alignment of core genes
+5. **Tree building:** Maximum likelihood phylogeny
+6. **Visualization:** Basic tree plots (optional)
 
 ```txt
 output_dir/
