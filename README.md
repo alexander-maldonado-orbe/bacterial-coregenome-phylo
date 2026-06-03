@@ -19,6 +19,38 @@ A complete pipeline for building phylogenetic trees from bacterial core genomes.
 - 8+ GB RAM (recommended)
 - 10+ GB free disk space
 
+## Usage
+```bash
+bash pipeline.sh [options]
+
+Options:
+  -i, --input DIR      Input directory containing genome FASTA files
+  -o, --output DIR     Output directory (default: phylogeny_results)
+  -t, --threads NUM    Number of CPU threads (default: 4)
+  -m, --method TOOL    Tree building method: iqtree or fasttree (default: iqtree)
+  -p, --prefix STR     Output prefix (default: core_genome)
+  -h, --help           Show this help message
+```
+
+## Output
+### Pipeline Steps
+1. Quality check - Verify input files
+2. Annotation - Prokka annotation of all genomes
+3. Core genome - Roary pangenome analysis
+4. Alignment - MAFFT alignment of core genes
+5. Tree building - Maximum likelihood phylogeny
+6. Visualization - Basic tree plots (optional)
+
+```txt
+output_dir/
+├── prokka/          # Annotated genomes
+├── roary/           # Roary output and core genome
+├── core_alignment/  # Core genome alignment files
+├── trees/           # Phylogenetic trees (Newick format)
+├── logs/            # Pipeline logs
+└── reports/         # Summary reports
+```
+
 ## Quick Start
 
 ```bash
