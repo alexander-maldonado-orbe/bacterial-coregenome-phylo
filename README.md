@@ -51,6 +51,12 @@ output_dir/
 └── reports/         # Summary reports
 ```
 
+## Example
+# Run with 8 threads using IQ-TREE
+```bash
+bash pipeline.sh -i my_genomes/ -o my_results/ -t 8 -m iqtree
+```
+
 ## Quick Start
 
 ```bash
