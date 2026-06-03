@@ -60,7 +60,7 @@ bash pipeline.sh -i my_genomes/ -o my_results/ -t 8 -m iqtree
 ## Clone repository and install environment
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/bacterial_phylogeny_pipeline.git
+git clone https://github.com/alexander-maldonado-orbe/bacterial_phylogeny_pipeline.git
 cd bacterial_phylogeny_pipeline
 
 # Create conda environment
