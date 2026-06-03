@@ -9,14 +9,14 @@ Reproducible pipeline for core-genome-based bacterial phylogenomics. Designed fo
 
 Reproducible and automated pipeline for building high-quality phylogenetic trees from the **core-genome** of bacteria.
 
-## 🎯 What is it for?
+## What is it for?
 
 This pipeline takes assembled bacterial genomes (in `.fasta` format) and produces:
 - A maximum likelihood phylogenetic tree based on the core genome
 - PDF visualizations of the tree
 - Intermediate files for further analysis
   
-## 📦 Requirements
+## Requirements
 
 - **macOS** (Apple Silicon M1/M2/M3 or Intel) or **Linux** (Ubuntu 20.04+)
 - **Minimum 8GB of RAM** (16GB recommended for >50 genomes)
