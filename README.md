@@ -23,7 +23,7 @@ A complete pipeline for building phylogenetic trees from bacterial core genomes.
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/bacterial_phylogeny_pipeline.git
+git clone https://github.com/alexander-maldonado-orbe/bacterial_phylogeny_pipeline.git
 cd bacterial_phylogeny_pipeline
 ```
 
@@ -38,7 +38,11 @@ conda activate bact_phylogeny
 bash pipeline.sh -i /path/to/genomes/ -o output_dir
 ```
 
-## Citations
+## Citation
+If you use this pipeline, please cite:
 
+- Seemann T. (2014). Prokka: rapid prokaryotic genome annotation. Bioinformatics (Oxford, England), 30(14), 2068–2069. https://doi.org/10.1093/bioinformatics/btu153
+- Page, A. J., Cummins, C. A., Hunt, M., Wong, V. K., Reuter, S., Holden, M. T., Fookes, M., Falush, D., Keane, J. A., & Parkhill, J. (2015). Roary: rapid large-scale prokaryote pan genome analysis. Bioinformatics (Oxford, England), 31(22), 3691–3693. https://doi.org/10.1093/bioinformatics/btv421
+- Minh, B. Q., Schmidt, H. A., Chernomor, O., Schrempf, D., Woodhams, M. D., von Haeseler, A., & Lanfear, R. (2020). IQ-TREE 2: New Models and Efficient Methods for Phylogenetic Inference in the Genomic Era. Molecular biology and evolution, 37(5), 1530–1534. https://doi.org/10.1093/molbev/msaa015
 
 ```
