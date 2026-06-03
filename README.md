@@ -123,10 +123,36 @@ chmod +x pipeline.sh
 chmod +x scripts/*.py
 ```
 
+## Verifying and Testing the installation
+Run this quick check to ensure everything is installed correctly:
+```bash
+conda activate bact_phylogeny
 
+# Check versions
+prokka --version
+roary --version
+mafft --version
+iqtree2 --version 2>/dev/null || echo "IQ-TREE installed"
+FastTreeMP -help 2>&1 | head -1
 
+# Python package check
+python -c "import Bio; import pandas; print('Python packages OK')"
+```
 
-# Run the pipeline
+### Test with sample data
+```bash
+mkdir test_genomes
+
+# Create or download some test genome files (FASTA format)
+# Example: download E. coli genomes from NCBI
+wget -P test_genomes/ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.fna.gz
+gunzip test_genomes/*.gz
+
+# Run pipeline with test data
+./pipeline.sh -i test_genomes -o test_output -t 2 -m fasttree
+```
+
+### Run the pipeline
 ```bash
 bash pipeline.sh -i /path/to/genomes/ -o output_dir
 ```
