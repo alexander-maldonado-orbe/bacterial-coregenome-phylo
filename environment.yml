@@ -8,15 +8,15 @@ dependencies:
   - prokka=1.14.6
   - roary=3.13.0
   - mafft=7.505
-  - iqtree=2.2.0
   - fasttree=2.1.11
-  - snakemake=7.25.0
-  - numpy=1.24.3
-  - pandas=2.0.1
-  - biopython=1.81
-  - r-ggplot2=3.4.2
-  - r-ggtree=3.6.2
-  - parallel=20230722
+  - iqtree=2.2.0
+  - biopython=1.79
+  - pandas=1.4.0
+  - numpy=1.21.5
+  - click=8.0.4
+  - perl=5.32.1
+  - perl-file-find-rule
+  - perl-file-slurp
+  - perl-lwp-simple
+  - parallel
   - pip
-  - pip:
-    - click==8.1.3
