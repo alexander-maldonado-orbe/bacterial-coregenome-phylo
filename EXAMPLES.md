@@ -53,11 +53,12 @@ conda activate bact_phylogeny
 - Runtime: 4-8 hours on 8 CPUs
 
 ## Step 4: Visualize results
+```bash
 # View tree
 cat results/trees/proteus_mirabilis_tree.nwk
 
 # Create colored tree by source
-```bash
+
 python << 'EOF'
 from Bio import Phylo
 import matplotlib.pyplot as plt
