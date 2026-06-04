@@ -32,11 +32,11 @@ done < accessions.txt
 ```
 
 ## Step 2: Run the pipeline
+```bash
 # Activate environment
 conda activate bact_phylogeny
 
 # Run pipeline on all 57 genomes
-```bash
 ./pipeline.sh \
     -i genomes/ \
     -o results \
