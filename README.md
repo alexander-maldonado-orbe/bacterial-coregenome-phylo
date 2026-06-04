@@ -88,7 +88,16 @@ gunzip test_genomes/*.gz
 
 ### Run the pipeline
 ```bash
-bash pipeline.sh -i /path/to/genomes/ -o output_dir
+# For closely related strains (default)
+./pipeline.sh -i genomes/ -o results/
+
+# For moderately diverse strains
+./pipeline.sh -i genomes/ -o results/ -cd 30
+
+# For diverse strains
+./pipeline.sh -i genomes/ -o results/ -cd 20 -m fasttree
+
+# The pipeline will automatically try lower thresholds and Parsnp if needed
 ```
 
 ## Citation
