@@ -96,9 +96,8 @@ gunzip test_genomes/*.gz
 
 # For diverse strains
 ./pipeline.sh -i genomes/ -o results/ -cd 20 -m fasttree
-
-# The pipeline will automatically try lower thresholds and Parsnp if needed
 ```
+The pipeline will automatically try lower thresholds and Parsnp if needed
 
 ## Citation
 If you use this pipeline, please cite:
