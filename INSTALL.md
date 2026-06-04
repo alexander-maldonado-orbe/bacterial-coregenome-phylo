@@ -74,3 +74,42 @@ FastTreeMP -help 2>&1 | head -1
 # Python package check
 python -c "import Bio; import pandas; print('Python packages OK')"
 ```
+
+## Troubleshooting Common Issues
+
+### Issue 1: Prokka fails with "Prokka needs blastp 2.2 or higher"
+**Solution:** 
+```bash
+conda install -c bioconda blast=2.9.0
+conda install -c bioconda prokka=1.14.6
+```
+
+### Issue 2: Roary fails with Perl module errors
+```bash
+conda install -c conda-forge perl-file-find-rule perl-file-slurp
+cpanm File::Find::Rule
+```
+
+### Issue 3: No core genes found (empty alignment)
+
+This is NORMAL for diverse genomes. Solutions:
+- Use more closely related strains (same species, same pathotype)
+- Lower the core percentage threshold: -cd 30 (30% of strains)
+- Use Parsnp instead for diverse genomes:
+```bash
+conda install -c bioconda parsnp
+parsnp -r reference.fna -d genomes/ -p 8 -o output/
+```
+
+### Issue 4: Memory errors
+Solution: Reduce threads and process fewer genomes:
+```bash
+./pipeline.sh -i genomes/ -o output/ -t 2
+```
+
+### Issue 5: Conda environment creation fails
+Solution: Use mamba instead:
+```bash
+conda install -c conda-forge mamba
+mamba env create -f environment.yml
+```
